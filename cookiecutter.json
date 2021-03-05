@@ -1,10 +1,11 @@
 {
-  "full_name": "Audrey Roy Greenfeld",
-  "email": "audreyr@example.com",
-  "github_username": "audreyr",
-  "project_name": "Python Boilerplate",
+  "full_name": "Spencer Bliven",
+  "email": "spencer.bliven@gmail.com",
+  "github_url": "https://github.com",
+  "github_username": "sbliven",
+  "project_name": "Human-readable Project Name",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "project_short_description": "Short description of the project.",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "use_pytest": "n",
@@ -12,5 +13,7 @@
   "add_pyup_badge": "n",
   "command_line_interface": ["Click", "Argparse", "No command-line interface"],
   "create_author_file": "y",
+  "use_black_formatting": "y",
+  "use_mypy": "y",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 }

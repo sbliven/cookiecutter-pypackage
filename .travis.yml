@@ -2,6 +2,7 @@
 
 language: python
 python:
+  - 3.9
   - 3.8
   - 3.7
   - 3.6
@@ -17,10 +18,10 @@ script: tox
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
-  user: audreyr
+  user: sbliven
   password:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: audreyr/python_boilerplate
-    python: 3.8
+    repo: sbliven/python_boilerplate
+    python: 3.9

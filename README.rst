@@ -23,6 +23,7 @@ Cookiecutter_ template for a Python package.
 Features
 --------
 
+All the original features from audreyfeldroy:
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * Travis-CI_: Ready for Travis Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 3.5, 3.6, 3.7, 3.8
@@ -30,6 +31,9 @@ Features
 * bump2version_: Pre-configured version bumping with a single command
 * Auto-release to PyPI_ when you push a new tag to master (optional)
 * Command line interface using Click (optional)
+
+Plus:
+* Lint with *black*, *flake8*, and *mypy*
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 
@@ -44,8 +48,8 @@ Linux:
 
 Windows:
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
+.. image:: https://ci.appveyor.com/api/projects/status/github/sbliven/cookiecutter-pypackage-noir?branch=master&svg=true
+    :target: https://ci.appveyor.com/project/sbliven/cookiecutter-pypackage-noir/branch/master
     :alt: Windows build status on Appveyor
 
 Quickstart
@@ -138,12 +142,13 @@ make my own packaging experience better.
 .. _Poetry: https://python-poetry.org/
 .. _PyPi: https://pypi.python.org/pypi
 
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
 .. _`Nekroze/cookiecutter-pypackage`: https://github.com/Nekroze/cookiecutter-pypackage
 .. _`tony/cookiecutter-pypackage-pythonic`: https://github.com/tony/cookiecutter-pypackage-pythonic
 .. _`ardydedase/cookiecutter-pypackage`: https://github.com/ardydedase/cookiecutter-pypackage
 .. _`lgiordani/cookiecutter-pypackage`: https://github.com/lgiordani/cookiecutter-pypackage
 .. _`briggySmalls/cookiecutter-pypackage`: https://github.com/briggySmalls/cookiecutter-pypackage
 .. _`veit/cookiecutter-namespace-template`: https://github.com/veit/cookiecutter-namespace-template
-.. _github comparison view: https://github.com/tony/cookiecutter-pypackage-pythonic/compare/audreyr:master...master
-.. _`network`: https://github.com/audreyr/cookiecutter-pypackage/network
-.. _`family tree`: https://github.com/audreyr/cookiecutter-pypackage/network/members
+.. _github comparison view: https://github.com/tony/cookiecutter-pypackage-pythonic/compare/sbliven:master...master
+.. _`network`: https://github.com/sbliven/cookiecutter-pypackage-noir/network
+.. _`family tree`: https://github.com/sbliven/cookiecutter-pypackage-noir/network/members
