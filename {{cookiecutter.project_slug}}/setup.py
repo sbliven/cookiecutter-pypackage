@@ -15,7 +15,10 @@ requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'C
 setup_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest-runner',{%- endif %}]
 
 test_requirements = ["tox", "flake8", "coverage",
-    {%- if cookiecutter.use_pytest == 'y' %} "pytest>=3", "pytest-runner>=5"{%- endif %}]
+    {%- if cookiecutter.use_pytest == 'y' %} "pytest>=3", "pytest-runner>=5",{%- endif %}
+    {%- if cookiecutter.use_black_formatting =='y' %} "black",{%- endif %}
+    {%- if cookiecutter.use_mypy =='y' %} "mypy",{%- endif %}
+    {%- if cookiecutter.use_isort =='y' %} "isort",{%- endif %}]
 
 doc_requirements = ["Sphinx>1.8"]
 
