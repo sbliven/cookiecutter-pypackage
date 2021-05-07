@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+from glob import glob
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
@@ -7,6 +8,10 @@ PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 def remove_file(filepath):
     os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
 
+def remove_files(fileglob, exclude=[], recursive=True):
+    for file in glob(fileglob, recursive=recursive):
+        if not file in exclude:
+            remove_file(file)
 
 if __name__ == '__main__':
 
@@ -20,3 +25,8 @@ if __name__ == '__main__':
 
     if 'Not open source' == '{{ cookiecutter.open_source_license }}':
         remove_file('LICENSE')
+
+    if '{{ cookiecutter.docs }}' == "RST":
+        remove_files("**/*.md")
+    elif '{{ cookiecutter.docs }}' == "Markdown":
+        remove_files("**/*.rst", exclude=glob("**/api.rst"))

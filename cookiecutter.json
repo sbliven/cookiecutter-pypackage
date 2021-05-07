@@ -12,6 +12,7 @@
   "use_pypi_deployment_with_travis": "y",
   "add_pyup_badge": "n",
   "command_line_interface": ["Click", "Argparse", "No command-line interface"],
+  "docs": ["RST", "Markdown"],
   "create_author_file": "y",
   "use_black_formatting": "y",
   "use_mypy": "y",

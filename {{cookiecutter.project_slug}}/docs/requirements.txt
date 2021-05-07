@@ -1,0 +1,10 @@
+# Pin dependencies for the docs
+# Should be kept up-to-date with setup.py
+sphinx==3.5.3
+sphinx-rtd-theme==0.5.2
+{%- if cookiecutter.use_mypy %}
+typing-extensions==3.7.4.3
+{%- endif %}
+{%- if cookiecutter.docs == "Markdown" %}
+myst-parser==0.13.5
+{%- endif %}
